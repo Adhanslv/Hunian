@@ -4,7 +4,7 @@ import { IconSearch } from "@tabler/icons-react";
 function CardSearch() {
 	return (
 		<div className="p-12 bg-white rounded-md  mt-24 mb-14  tablet:max-w-96">
-			<div className="flex items-center gap-x-4 tablet:flex-col  tablet:gap-y-3 mobile:flex-col">
+			<div className="flex items-center gap-x-4 tablet:flex-col tablet:gap-y-3 mobile:flex-col mobile:gap-y-3">
 				<label htmlFor="">Provinsi:</label>
 				{/* <input
 					type="text"

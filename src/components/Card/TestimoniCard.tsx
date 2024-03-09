@@ -1,6 +1,6 @@
 import React from "react";
-import { ImageAvatar } from "@/utils/AvatarContentImage";
 import Image from "next/image";
+import { DataTestimoni } from "@/utils/DataTestimoni";
 
 export default function TestimoniCard() {
 	return (
@@ -8,8 +8,8 @@ export default function TestimoniCard() {
 			<div className="text-center text-3xl font-semibold mb-12">
 				Our Testimonial
 			</div>
-			<div className="grid grid-cols-4 gap-x-4 gap-y-4 tablet:grid-cols-2 mobile:grid-cols-1">
-				{ImageAvatar.map((data, index) => {
+			<div className="grid grid-cols-4 gap-x-4 gap-y-4 tablet:grid-cols-2 mobile:grid-cols-1 mobile:justify-center">
+				{DataTestimoni.map((data, index) => {
 					return (
 						<div
 							className="bg-slate-100 rounded-md border border-black/20 px-5 py-3 shadow-sm"
@@ -22,7 +22,7 @@ export default function TestimoniCard() {
 										alt="ini avatarnya"
 										width={60}
 										height={60}
-										className="rounded-full object-cover object-center aspect-[1/1]"
+										className="rounded-full object-cover object-center aspect-[1/1] w-fit"
 									/>
 									<div>
 										<h1>{data.name}</h1>

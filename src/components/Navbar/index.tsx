@@ -7,7 +7,7 @@ import Link from "next/link";
 const Navbar = () => {
 	return (
 		<>
-			<nav className="flex items-center justify-between p-[10vw] py-5  bg-[#00426f] tablet:px-4 mobile:px-2">
+			<nav className="flex items-center justify-between p-[10vw] py-5  bg-[#00426f] tablet:px-4 mobile:px-3">
 				<div className="text-white flex items-center gap-x-2 text-3xl font-semibold mobile:text-[19px]">
 					<IconDoor size={35} /> Hunian
 				</div>
@@ -17,9 +17,11 @@ const Navbar = () => {
 					<Link href={"/Apartemen"}>Apartemen</Link>
 				</div>
 				<div>
-					<button className=" flex  items-center gap-x-2 px-5 py-2 rounded-md bg-white outline-none text-[#00426f] mobile:px-1">
-						<IconBrandGoogleFilled /> Login With Google
-					</button>
+					<Link href={"/Login"}>
+						<button className=" flex  items-center gap-x-2 px-5 py-2 rounded-md bg-white outline-none text-[#00426f] mobile:px-1">
+							<IconBrandGoogleFilled /> Login
+						</button>
+					</Link>
 				</div>
 			</nav>
 			<div className="flex items-center justify-center bg-[#00426f]">

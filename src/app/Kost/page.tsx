@@ -1,4 +1,4 @@
-import CardContent from "@/components/Card/CardContent";
+import CardContent from "@/components/Card/CardContentKost";
 import CardSortKost from "@/components/Card/CardSortKost";
 import React from "react";
 
