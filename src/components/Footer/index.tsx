@@ -41,19 +41,25 @@ const Footer = () => {
 			</div>
 			<div className="col-span-6 mt-12 mb-12 flex justify-between mobile:block">
 				<div className="flex flex-col gap-y-4 mb-4">
-					<h1 className="font-semibold uppercase text-[18px] ">Hunian</h1>
+					<h1 className="font-semibold uppercase text-[18px] text-white/65">
+						Hunian
+					</h1>
 					<p>Tentang Kami</p>
 					<p>Job Kami</p>
 					<p>Promosikan Kost Anda</p>
 					<p>Pusat Bantuan</p>
 				</div>
 				<div className="flex flex-col gap-y-4 mb-4">
-					<h1 className="font-semibold uppercase text-[18px] ">Kebijakan</h1>
+					<h1 className="font-semibold uppercase text-[18px] text-white/65">
+						Kebijakan
+					</h1>
 					<p>Kebijakan Privasi</p>
 					<p>Syarat dan Ketentuan</p>
 				</div>
 				<div className="flex flex-col gap-y-4 mb-4">
-					<h1 className="font-semibold uppercase text-[18px] ">Hubungi Kami</h1>
+					<h1 className="font-semibold uppercase text-[18px] text-white/65">
+						Hubungi Kami
+					</h1>
 					<Link href={"/"} className="flex items-center gap-x-3 ">
 						<IconMail className="text-teal-500" />
 						asyhab2002
