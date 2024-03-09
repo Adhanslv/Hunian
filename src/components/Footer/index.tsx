@@ -20,7 +20,7 @@ const Footer = () => {
 					height={60}
 				/>
 				<p className="mt-5">
-					Dapatkan "info kost murah" hanya di Hunian App. Mau "Sewaan Murah"?
+					Dapatkan info kost murah hanya di Hunian App. Mau Sewaan Murah?
 				</p>
 				<div className="flex gap-x-3  mt-4">
 					<Image
