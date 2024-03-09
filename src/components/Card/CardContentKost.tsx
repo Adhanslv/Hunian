@@ -1,70 +1,7 @@
 import Image from "next/image";
 import React from "react";
-
 import { DataContentKost } from "@/utils/DataContent";
 export default function CardContent() {
-	// const Dataset = [
-	// 	{
-	// 		images: Room1,
-	// 		stock: "Sisa 10 Kamar",
-	// 		type: "Putra",
-	// 		title: "Kost Berandal",
-	// 		desk: "Jl. Ir Soeakrno Gg.Dharma Bakti Kec. Muara Jawa Ulu Kel. Muara",
-	// 		domsil: "Jawa Timur, Sidoarjo",
-	// 		author: "Mami Kos",
-	// 		timestamp: "12/02/2023",
-	// 	},
-	// 	{
-	// 		images: Room2,
-	// 		stock: "Sisa 2 Kamar",
-	// 		type: "Putri",
-	// 		title: "Kost Rawa Indah",
-	// 		desk: "Jl. Ir Soeakrno Gg.Dharma Bakti Kec. Muara Jawa Ulu Kel. Muara",
-	// 		domsil: "Jawa Timur, Sidoarjo",
-	// 		author: "Kimbe",
-	// 		timestamp: "12/02/2023",
-	// 	},
-	// 	{
-	// 		images: Room3,
-	// 		stock: "Sisa 5 Kamar",
-	// 		type: "Putra",
-	// 		title: "Kost Laravel",
-	// 		desk: "Jl. Ir Soeakrno Gg.Dharma Bakti Kec. Muara Jawa Ulu Kel. Muara",
-	// 		domsil: "Jawa Timur, Sidoarjo",
-	// 		author: "Parsinta",
-	// 		timestamp: "12/02/2023",
-	// 	},
-	// 	{
-	// 		images: Room1,
-	// 		stock: "Sisa 2 Kamar",
-	// 		type: "Putra",
-	// 		title: "Kost Swifter",
-	// 		desk: "Jl. Ir Soeakrno Gg.Dharma Bakti Kec. Muara Jawa Ulu Kel. Muara",
-	// 		domsil: "Jawa Timur, Sidoarjo",
-	// 		author: "Afrizal",
-	// 		timestamp: "12/02/2023",
-	// 	},
-	// 	{
-	// 		images: Room2,
-	// 		stock: "Sisa 1 Kamar",
-	// 		type: "Putra",
-	// 		title: "Kost Galgadot",
-	// 		desk: "Jl. Ir Soeakrno Gg.Dharma Bakti Kec. Muara Jawa Ulu Kel. Muara",
-	// 		domsil: "Jawa Timur, Sidoarjo",
-	// 		author: "Kang Oban",
-	// 		timestamp: "12/02/2023",
-	// 	},
-	// 	{
-	// 		images: Room3,
-	// 		stock: "Sisa 5 Kamar",
-	// 		type: "Putri",
-	// 		title: "Kost Dewsiui",
-	// 		desk: "Jl. Ir Soeakrno Gg.Dharma Bakti Kec. Muara Jawa Ulu Kel. Muara",
-	// 		domsil: "Jawa Timur, Sidoarjo",
-	// 		author: "Adhan",
-	// 		timestamp: "12/02/2023",
-	// 	},
-	// ];
 	return (
 		<div className=" mt-12 px-[10vw]">
 			<div className="grid grid-cols-3 gap-x-12 tablet:grid-cols-2 mobile:block">
@@ -82,7 +19,7 @@ export default function CardContent() {
 								className="w-full aspect-video object-cover object-center mb-4 rounded-md "
 							/>
 							<div className="flex items-center justify-between mb-3">
-								<h1 className="font-semibold">{data.type}</h1>
+								<h1 className="font-semibolds">{data.type}</h1>
 								<p className="italic text-black/75">{data.stock}</p>
 							</div>
 							<h1 className=" uppercase font-semibold">{data.title}</h1>
