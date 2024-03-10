@@ -14,9 +14,15 @@ const Navbar = () => {
 					<IconDoor size={35} /> Hunian
 				</div>
 				<div className="flex gap-10	 text-white text-lg mobile:hidden ">
-					<Link href={"/"}>Home</Link>
-					<Link href={"/Kost"}>Kost</Link>
-					<Link href={"/Apartemen"}>Apartemen</Link>
+					<Link href={"/"} className="text-white/75 hover:text-white ">
+						Home
+					</Link>
+					<Link href={"/Kost"} className="text-white/75 hover:text-white ">
+						Kost
+					</Link>
+					<Link href={"/Apartemen"} className="text-white/75 hover:text-white ">
+						Apartemen
+					</Link>
 				</div>
 				<div>
 					<button className=" flex  items-center gap-x-2 px-5 py-2 rounded-md bg-white outline-none text-[#00426f] mobile:hidden">

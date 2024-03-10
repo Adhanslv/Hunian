@@ -12,17 +12,18 @@ import Link from "next/link";
 const Footer = () => {
 	return (
 		<div className="px-[10vw] bg-[#00426f] mt-12  grid grid-cols-10  items-center text-white ">
-			<div className="col-span-4 mt-12 mb-12 mobile:col-span-12  ">
+			<div className="col-span-4 mt-12 mb-12 tablet:col-span-6 mobile:col-span-10  ">
 				<Image
 					src={"door-open-solid.svg"}
 					alt="ini logo"
 					width={60}
 					height={60}
 				/>
-				<p className="mt-5">
+				<p className="mt-3">
 					Dapatkan info kost murah hanya di Hunian App. Mau Sewaan Murah?
 				</p>
-				<div className="flex gap-x-3  mt-4">
+				<Link href={"/"} className="flex gap-x-3 mt-3">
+					{" "}
 					<Image
 						src={"/playstore.svg"}
 						alt="ini gambarnya"
@@ -37,37 +38,41 @@ const Footer = () => {
 						height={100}
 						className="object-cover w-fit"
 					/>
-				</div>
+				</Link>
 			</div>
-			<div className="col-span-6 mt-12 mb-12 flex justify-between mobile:block">
-				<div className="flex flex-col gap-y-4 mb-4">
-					<h1 className="font-semibold uppercase text-[18px] text-white/65">
+			<div className="col-span-6 mt-12 mb-12 flex justify-between tablet:block  mobile:block">
+				<div className="flex flex-col gap-y-4 mb-4  text-white/75">
+					<h1 className="font-semibold uppercase text-[18px] text-white ">
 						Hunian
 					</h1>
-					<p>Tentang Kami</p>
-					<p>Job Kami</p>
-					<p>Promosikan Kost Anda</p>
-					<p>Pusat Bantuan</p>
+					<Link href={"/"}>Tentang Kami</Link>
+					<Link href={"/"}>Job Kami</Link>
+					<Link href={"/"}>Promosikan Kost Anda</Link>
+					<Link href={"/"}>Pusat Bantuan</Link>
 				</div>
-				<div className="flex flex-col gap-y-4 mb-4">
-					<h1 className="font-semibold uppercase text-[18px] text-white/65">
+				<div className="flex flex-col gap-y-4 mb-4 text-white/75 ">
+					<h1 className="font-semibold uppercase text-[18px] text-white ">
 						Kebijakan
 					</h1>
-					<p>Kebijakan Privasi</p>
-					<p>Syarat dan Ketentuan</p>
+					<Link href={"/"}>Kebijakan Privasi</Link>
+					<Link href={"/"}>Syarat dan Ketentuan</Link>
 				</div>
-				<div className="flex flex-col gap-y-4 mb-4">
-					<h1 className="font-semibold uppercase text-[18px] text-white/65">
+				<div className="flex flex-col gap-y-4 mb-4 text-white/75 mobile:text-[12px]">
+					<h1 className="font-semibold uppercase text-[18px] text-white ">
 						Hubungi Kami
 					</h1>
 					<Link href={"/"} className="flex items-center gap-x-3 ">
-						<IconMail className="text-teal-500" />
-						asyhab2002
+						<IconMail className="" />
+						asyhab2002@gmail.com
 					</Link>
-					<Link href={"/"} className="flex items-center gap-x-3 ">
-						<IconBrandWhatsapp className="text-green-400" />
+					<a
+						target="_blank"
+						href="https://wa.me/6281345220865"
+						className="flex items-center gap-x-2 "
+					>
+						<IconBrandWhatsapp className="" />
 						+6281345220865
-					</Link>
+					</a>
 					<div className="flex items-center gap-x-4">
 						<IconBrandInstagram />
 						<IconBrandGithub />

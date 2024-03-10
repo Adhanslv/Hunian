@@ -1,5 +1,6 @@
 export const DataContentKost = [
 	{
+		id: "1",
 		images: "/images/room/room1.jpg",
 		stock: "Sisa 10 Kamar",
 		type: "Putra",
@@ -10,6 +11,7 @@ export const DataContentKost = [
 		timestamp: "12/02/2023",
 	},
 	{
+		id: "2",
 		images: "/images/room/room2.jpg",
 		stock: "Sisa 2 Kamar",
 		type: "Putri",
@@ -20,6 +22,7 @@ export const DataContentKost = [
 		timestamp: "12/02/2023",
 	},
 	{
+		id: "3",
 		images: "/images/room/room3.jpg",
 		stock: "Sisa 5 Kamar",
 		type: "Campur",
@@ -30,6 +33,7 @@ export const DataContentKost = [
 		timestamp: "12/02/2023",
 	},
 	{
+		id: "4",
 		images: "/images/room/room4.jpg",
 		stock: "Sisa 2 Kamar",
 		type: "Putra",
@@ -40,6 +44,7 @@ export const DataContentKost = [
 		timestamp: "12/02/2023",
 	},
 	{
+		id: "5",
 		images: "/images/room/room5.jpg",
 		stock: "Sisa 1 Kamar",
 		type: "Superior Room",
@@ -50,6 +55,7 @@ export const DataContentKost = [
 		timestamp: "12/02/2023",
 	},
 	{
+		id: "6",
 		images: "/images/room/room6.jpg",
 		stock: "Sisa 5 Kamar",
 		type: "Deluxe Room",
@@ -63,6 +69,7 @@ export const DataContentKost = [
 
 export const DataContentApartemen = [
 	{
+		id: 1,
 		images: "/images/apartemen/room1.jpg",
 		stock: "Sisa 10 Kamar",
 		type: "Deluxe Room",
@@ -73,6 +80,7 @@ export const DataContentApartemen = [
 		timestamp: "12/02/2023",
 	},
 	{
+		id: 1,
 		images: "/images/apartemen/room2.jpg",
 		stock: "Sisa 2 Kamar",
 		type: "Junior Suite Room",
@@ -83,6 +91,7 @@ export const DataContentApartemen = [
 		timestamp: "12/02/2023",
 	},
 	{
+		id: 1,
 		images: "/images/apartemen/room3.jpg",
 		stock: "Sisa 5 Kamar",
 		type: "Standard Room",
@@ -93,6 +102,7 @@ export const DataContentApartemen = [
 		timestamp: "12/02/2023",
 	},
 	{
+		id: 1,
 		images: "/images/apartemen/room4.jpg",
 		stock: "Sisa 2 Kamar",
 		type: "Junior Suite Room",
@@ -103,6 +113,7 @@ export const DataContentApartemen = [
 		timestamp: "12/02/2023",
 	},
 	{
+		id: 1,
 		images: "/images/apartemen/room5.jpg",
 		stock: "Sisa 1 Kamar",
 		type: "Superior Room",
@@ -113,6 +124,7 @@ export const DataContentApartemen = [
 		timestamp: "12/02/2023",
 	},
 	{
+		id: 1,
 		images: "/images/apartemen/room6.jpg",
 		stock: "Sisa 5 Kamar",
 		type: "Deluxe Room",

@@ -9,7 +9,7 @@ export default function CardContentApart() {
 				{DataContentApartemen.map((data, index) => {
 					return (
 						<div
-							className="mb-8 border border-black/20  bg-white items-center  px-5 py-4 rounded-md shadow-sm"
+							className="mb-8 border  border-black/20  bg-white items-center  px-5 py-4 rounded-md shadow-sm"
 							key={index}
 						>
 							<Image
@@ -17,7 +17,7 @@ export default function CardContentApart() {
 								width={200}
 								height={100}
 								alt="ini fotonya"
-								className="w-full aspect-video object-cover object-center mb-4 rounded-md "
+								className="w-full aspect-video object-cover object-center mb-4 rounded-md  "
 							/>
 							<div className="flex items-center justify-between mb-3">
 								<h1>{data.type}</h1>

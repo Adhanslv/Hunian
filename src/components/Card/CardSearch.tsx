@@ -6,11 +6,6 @@ function CardSearch() {
 		<div className="p-12 bg-white rounded-md  mt-24 mb-14  tablet:max-w-96">
 			<div className="flex items-center gap-x-4 tablet:flex-col tablet:gap-y-3 mobile:flex-col mobile:gap-y-3">
 				<label htmlFor="">Provinsi:</label>
-				{/* <input
-					type="text"
-					placeholder="Provinsi"
-					className="border border-black/30 rounded-md px-3	 py-2"
-				/> */}
 				<select
 					name="Provinsi"
 					id="provinsi"
@@ -22,11 +17,6 @@ function CardSearch() {
 					<option value="">Jawa Barat</option>
 				</select>
 				<label htmlFor="">Kota/Kabupaten:</label>
-				{/* <input
-					type="text"
-					placeholder="Kota/Kabupaten"
-					className="border border-black/30 rounded-md px-3	 py-2"
-				/> */}
 				<select
 					name="Provinsi"
 					id="provinsi"
