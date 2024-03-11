@@ -4,7 +4,7 @@ import React from "react";
 
 export default function PaymentMethod() {
 	return (
-		<div className="px-[10vw] flex flex-col items-center ">
+		<div className="px-[10vw] flex flex-col items-center mt-40 ">
 			<div className="font-semibold text-3xl">Payment Method</div>
 			<div className="flex items-center justify-center flex-wrap  gap-6 mt-10 mb-20">
 				{RefPayment.map((ref, index) => {

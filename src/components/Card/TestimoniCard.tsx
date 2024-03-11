@@ -4,7 +4,7 @@ import { DataTestimoni } from "@/utils/DataTestimoni";
 
 export default function TestimoniCard() {
 	return (
-		<div className="Testimonial p-[10vw] ">
+		<div className="Testimonial px-[10vw] mt-14">
 			<div className="text-center text-3xl font-semibold mb-10">
 				Our Testimonial
 			</div>
