@@ -1,4 +1,5 @@
 "use client";
+import CardPayment from "@/components/CardPay";
 import { DataContentKost } from "@/utils/DataContent";
 import {
 	IconBolt,
@@ -6,7 +7,6 @@ import {
 	IconCash,
 	IconDoorEnter,
 	IconHeart,
-	IconMessage,
 	IconShare,
 } from "@tabler/icons-react";
 import Image from "next/image";
@@ -20,7 +20,7 @@ const Previews = () => {
 
 	return (
 		<>
-			<div className="px-[10vw] mt-12 flex items-center text-2xl">
+			<div className="px-[10vw]  flex items-center text-2xl mobile:-ml-3 mt-10">
 				<Link href={"/"} className="flex items-center">
 					<IconCaretLeft size={40} className="font-light" />
 					<h1 className="hover:translate-x-2 transition ease-in duration-300  cursor-pointer">
@@ -29,7 +29,7 @@ const Previews = () => {
 				</Link>
 			</div>
 			<div className="px-[10vw] flex flex-col items-center">
-				<div className=" justify-center mt-12">
+				<div className=" justify-center mt-8">
 					<Image
 						src={items.images}
 						width={100}
@@ -37,11 +37,11 @@ const Previews = () => {
 						layout="responsive"
 						quality={100}
 						alt={items.title}
-						className="w-[1230px] aspect-[2/1] object-cover object-center mb-4 rounded-t-md  "
+						className="w-[1230px] aspect-[2/1] object-cover object-center mb-4 rounded-t-md mobile:wfu  "
 					/>
 				</div>
 			</div>
-			<div className="grid grid-cols-9 mb-40">
+			<div className="grid grid-cols-9 mb-7">
 				<div className="px-[10vw] mt-12 col-span-6 mobile:col-span-12">
 					<h1 className="text-3xl font-semibold mb-2">{items.title}</h1>
 					<div className="flex items-center  mt-6 gap-3 flex-wrap">
@@ -73,39 +73,7 @@ const Previews = () => {
 					</div>
 				</div>
 				<div className="col-span-3 max-w-sm mt-12 mobile:col-span-10 mobile:ml-1 mobile:px-3	">
-					<div className=" px-4 py-3 shadow-lg border border-black/10 rounded-md">
-						<h1 className="flex items-center text-[20px] gap-3">
-							<IconBolt className="text-red-600" size={35} />
-							Diskon 250rb sewa 3 bulan
-						</h1>
-						<p className="text-[18px] px-2 mt-2">
-							Rp 1.500.000<span className="text-sm">/bulan</span>
-						</p>
-						<div className="flex mt-5 px-2 gap-x-3">
-							<input
-								type="date"
-								className="px-4 py-3 border border-[#00426f] rounded-md"
-							/>
-							<select
-								name=""
-								id=""
-								className="px-4 py-3 border border-[#00426f] rounded-md w-40"
-							>
-								<option value="">3 bulan</option>
-								<option value="">4 bulan</option>
-								<option value="">5 bulan</option>
-							</select>
-						</div>
-						<div className="flex flex-col gap-4 mt-6 mb-5 px-2">
-							<div className="px-4 py-2 cursor-pointer border border-[#00426f]  rounded-md flex items-center gap-x-2">
-								<IconMessage />
-								Tanya Pemilik
-							</div>
-							<div className="px-4 py-2 cursor-pointer border border-[#00426f]  rounded-md flex items-center gap-x-2">
-								Ajukan Sewa
-							</div>
-						</div>
-					</div>
+					<CardPayment />
 				</div>
 			</div>
 		</>
