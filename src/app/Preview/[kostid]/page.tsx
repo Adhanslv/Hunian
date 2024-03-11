@@ -43,7 +43,7 @@ const Previews = () => {
 				</div>
 			</div>
 			<div className="grid grid-cols-10 mb-7">
-				<div className="px-[10vw] mt-12 col-span-7 mobile:col-span-12">
+				<div className="px-[10vw] mt-12 col-span-6  mobile:col-span-12">
 					<h1 className="text-3xl font-semibold mb-2">{items.title}</h1>
 					<div className="flex items-center  mt-6 gap-3 flex-wrap">
 						<p className="text-[18px] px-3 py-2 border border-black/30 rounded-md">
@@ -73,10 +73,10 @@ const Previews = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col-span-2 max-w-sm mt-12 mobile:col-span-10 mobile:ml-1 mobile:px-3	">
+				<div className="col-span-3 max-w-sm mt-12 mobile:col-span-10 mobile:ml-1 mobile:px-2	">
 					<CardPayment />
 				</div>
-				<div className="col-span-7 px-[10vw] mt-12 mb-12 leading-10 flex items-center  justify-between mobile:col-span-12">
+				<div className="col-span-6 px-[10vw] mt-12 mb-12 leading-10 flex items-center  justify-between mobile:col-span-12">
 					<div>
 						<h1 className="text-2xl mobile:text-[19px]">
 							Kos Dikelola Oleh{" "}

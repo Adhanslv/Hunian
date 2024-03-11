@@ -4,7 +4,7 @@ import ButtonKeep from "../ButtonKeep";
 
 const CardPayment = () => {
 	return (
-		<div className=" px-4 py-3 shadow-lg border border-black/10 rounded-md">
+		<div className="w-fit px-4 py-3 shadow-lg border border-black/10 rounded-md">
 			<h1 className="flex items-center text-[20px] gap-3">
 				<IconBolt className="text-red-600" size={35} />
 				Diskon 250rb sewa 3 bulan
@@ -12,7 +12,7 @@ const CardPayment = () => {
 			<p className="text-[18px] px-2 mt-2">
 				Rp 1.500.000<span className="text-sm">/bulan</span>
 			</p>
-			<div className="flex mt-5 px-2 gap-x-3 mobile:flex-col gap-y-3">
+			<div className="flex mt-5 px-2 gap-x-3  gap-y-3">
 				<input
 					type="date"
 					className="px-4 py-3 border border-[#00426f] rounded-md "
