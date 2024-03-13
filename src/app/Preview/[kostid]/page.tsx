@@ -1,14 +1,17 @@
 "use client";
 import ButtonKeep from "@/components/ButtonKeep";
+import CardBenefits from "@/components/CardBenefits";
 import CardPayment from "@/components/CardPay";
 import { DataContentKost } from "@/utils/DataContent";
 import {
 	IconBolt,
 	IconCaretLeft,
 	IconCash,
+	IconCircleArrowLeft,
 	IconDoorEnter,
 	IconHeart,
 	IconShare,
+	IconUserHeart,
 } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,9 +25,9 @@ const Previews = () => {
 	return (
 		<>
 			<div className="px-[10vw]  flex items-center text-2xl mobile:-ml-3 mt-10">
-				<Link href={"/"} className="flex items-center">
-					<IconCaretLeft size={35} className="font-light" />
-					<h1 className="hover:translate-x-2 transition ease-in duration-300  cursor-pointer text-[20px] mobile:text-[18px]">
+				<Link href={"/"} className="flex items-center  gap-x-2">
+					<IconCircleArrowLeft size={35} className="font-light mobile:-ml-4" />
+					<h1 className="hover:translate-x-2 font-semibold transition ease-in duration-300  cursor-pointer text-[20px] mobile:text-[19px]">
 						Back
 					</h1>
 				</Link>
@@ -42,7 +45,7 @@ const Previews = () => {
 					/>
 				</div>
 			</div>
-			<div className="grid grid-cols-10 mb-7">
+			<div className="grid grid-cols-9 mb-7 items-start">
 				<div className="px-[10vw] mt-12 col-span-6  mobile:col-span-12">
 					<h1 className="text-3xl font-semibold mb-2">{items.title}</h1>
 					<div className="flex items-center  mt-6 gap-3 flex-wrap">
@@ -79,8 +82,8 @@ const Previews = () => {
 				<div className="col-span-6 px-[10vw] mt-12 mb-12 leading-10 flex items-center  justify-between mobile:col-span-12">
 					<div>
 						<h1 className="text-2xl mobile:text-[19px]">
-							Kos Dikelola Oleh{" "}
-							<span className="font-semibold">{items.author}</span>
+							Kos Dikelola Oleh
+							<span className="font-semibold"> {items.author}</span>
 						</h1>
 						<p className="text-black/50 text-[18px]  ">Online 4 hari lalu</p>
 					</div>
@@ -90,14 +93,18 @@ const Previews = () => {
 							alt={items.title}
 							width={78}
 							height={78}
-							className="object-cover rounded-full h-fit object-center"
+							className="object-cover rounded-full h-fit object-jcenter"
 						/>
 					</div>
 				</div>
-				<div className=" col-start-2 col-span-6 w-full  border-b-2 border-b-black/20 border-dashed  mb-7 mobile:col-start-2 mobile:col-span-8 "></div>
-				<div className="px-[10vw] col-span-12">
-					<h1>Yang kamu dapatkan di {items.title}</h1>
+				<div className="-ml-4 col-start-2 col-span-6 max-w-[940px]  border-b-2 border-b-black/20 border-dashed  mb-7 mobile:col-start-2 mobile:col-span-8 "></div>
+				<div className="px-[10vw] col-span-12 min-h-screen">
+					<h1 className="font-semibold text-2xl">
+						Yang kamu dapatkan di {items.title}
+					</h1>
+					<CardBenefits />
 				</div>
+				<div className="-ml-4 col-start-2 col-span-6 max-w-[940px]  border-b-2 border-b-black/20 border-dashed  mb-7 mobile:col-start-2 mobile:col-span-8 "></div>
 			</div>
 		</>
 	);
