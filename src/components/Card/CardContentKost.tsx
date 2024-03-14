@@ -23,7 +23,7 @@ export default function CardContent() {
 										className="w-full aspect-[21/9] object-cover object-center mb-4 rounded-t-xl cursor-pointer "
 									/>
 								</div>
-								<div className="absolute -mt-40  ml-[299px] text-white bg-[#3d7d7b]/80 px-3 py-1 rounded-full tablet:-mt-28 tablet:ml-48 mobile:-mt-28 mobile:ml-48">
+								<div className="absolute -mt-[150px]  ml-[259px] text-white bg-[#3d7d7b]/80 px-3 py-1 rounded-full tablet:-mt-[122px] tablet:ml-[197px] mobile:-mt-[122px] mobile:ml-[197px]">
 									diskon 15%
 								</div>
 								<div className="mb-8 border border-black/20  bg-white items-center  px-5 py-4 rounded-b-xl shadow-sm ">

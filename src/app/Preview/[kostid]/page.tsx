@@ -1,6 +1,7 @@
 "use client";
 import ButtonKeep from "@/components/ButtonKeep";
 import CardBenefits from "@/components/CardBenefits";
+import CardFacility from "@/components/CardFacility";
 import CardPayment from "@/components/CardPay";
 import CardReviews from "@/components/CardReviews";
 import { DataContentKost } from "@/utils/DataContent";
@@ -116,7 +117,10 @@ const Previews = () => {
 					</h1>
 					<CardBenefits />
 				</div>
-				<div className="-ml-4 col-start-2 col-span-6 max-w-[940px]  border-b-2 border-b-black/20 border-dashed  mb-7 mobile:col-start-2 mobile:col-span-8 mobile:w-[334px] "></div>
+				<div className="-ml-4 col-start-2 col-span-6 max-w-[940px]  border-b-2 border-b-black/20 border-dashed  mobile:col-start-2 mobile:col-span-8 mobile:w-[334px] "></div>
+			</div>
+			<div className="px-[10vw]">
+				<CardFacility />
 			</div>
 		</>
 	);
