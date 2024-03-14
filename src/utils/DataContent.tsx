@@ -60,7 +60,7 @@ export const DataContentKost = [
 		stock: "Tersisa 5 Kamar",
 		type: "Kost Putri",
 		title: "Kost Dewsiui",
-		desk: "Jl. Ir Soeakrno Gg.Dharma Bakti Kec. Muara Jawa Ulu Kel. Muara",
+		desk: "Jl. Ir Soeakrno Gg.Dharma Bakti Kec. Muara Jawa Ulu Kel. Muara Jawa",
 		domsil: "Jawa Timur, Sidoarjo",
 		author: "Adhan",
 		timestamp: "12/02/2023",

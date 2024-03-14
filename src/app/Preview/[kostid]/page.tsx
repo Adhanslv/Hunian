@@ -2,14 +2,15 @@
 import ButtonKeep from "@/components/ButtonKeep";
 import CardBenefits from "@/components/CardBenefits";
 import CardPayment from "@/components/CardPay";
+import CardReviews from "@/components/CardReviews";
 import { DataContentKost } from "@/utils/DataContent";
+import { IconPlayerPlay, IconRotate360 } from "@tabler/icons-react";
 import {
-	IconBolt,
-	IconCaretLeft,
 	IconCash,
 	IconCircleArrowLeft,
 	IconDoorEnter,
 	IconHeart,
+	IconPhoto,
 	IconShare,
 	IconUserHeart,
 } from "@tabler/icons-react";
@@ -32,7 +33,7 @@ const Previews = () => {
 					</h1>
 				</Link>
 			</div>
-			<div className="px-[10vw] flex flex-col items-center mobile:p-0">
+			<div className="px-[10vw] flex flex-col items-center mobile:px-4">
 				<div className=" justify-center mt-8">
 					<Image
 						src={items.images}
@@ -41,12 +42,23 @@ const Previews = () => {
 						layout="responsive"
 						quality={100}
 						alt={items.title}
-						className=" aspect-[5.50/2] object-cover object-center mb-4 rounded-md  mobile:aspect-video mobile:rounded-none	 "
+						className=" aspect-[5.50/2] object-cover object-center mb-4 rounded-md  mobile:aspect-video mobile:rounded-md	 "
 					/>
 				</div>
 			</div>
+			<div className="px-[10vw]  flex items-center gap-x-4 mobile:justify-center	 tablet:flex-wrap">
+				<CardReviews>
+					<IconPhoto /> Foto
+				</CardReviews>
+				<CardReviews>
+					<IconPlayerPlay /> Video
+				</CardReviews>
+				<CardReviews>
+					<IconRotate360 /> 360°
+				</CardReviews>
+			</div>
 			<div className="grid grid-cols-9 mb-7 items-start">
-				<div className="px-[10vw] mt-12 col-span-6  mobile:col-span-12">
+				<div className="px-[10vw] mt-12 col-span-6 tablet:col-span-5  mobile:col-span-12 ">
 					<h1 className="text-3xl font-semibold mb-2">{items.title}</h1>
 					<div className="flex items-center  mt-6 gap-3 flex-wrap">
 						<p className="text-[18px] px-3 py-2 border border-black/30 rounded-md">
@@ -76,10 +88,10 @@ const Previews = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col-span-3 max-w-sm mt-12 mobile:col-span-10 mobile:ml-1 mobile:px-2	">
+				<div className="col-span-3 max-w-sm mt-12 mobile:col-span-10 mobile:ml-1  mobile:px-2	">
 					<CardPayment />
 				</div>
-				<div className="col-span-6 px-[10vw] mt-12 mb-12 leading-10 flex items-center  justify-between mobile:col-span-12">
+				<div className="col-span-6  px-[10vw] mt-12 mb-12 leading-10 flex items-center  justify-between tablet:col-span-5 mobile:col-span-12">
 					<div>
 						<h1 className="text-2xl mobile:text-[19px]">
 							Kos Dikelola Oleh
@@ -97,14 +109,14 @@ const Previews = () => {
 						/>
 					</div>
 				</div>
-				<div className="-ml-4 col-start-2 col-span-6 max-w-[940px]  border-b-2 border-b-black/20 border-dashed  mb-7 mobile:col-start-2 mobile:col-span-8 "></div>
-				<div className="px-[10vw] col-span-12 min-h-screen">
+				<div className="-ml-4 col-start-2 col-span-6 max-w-[940px]  border-b-2 border-b-black/20 border-dashed  mb-7 mobile:col-start-2 mobile:col-span-8 mobile:w-[334px] "></div>
+				<div className="px-[10vw] col-span-12">
 					<h1 className="font-semibold text-2xl">
 						Yang kamu dapatkan di {items.title}
 					</h1>
 					<CardBenefits />
 				</div>
-				<div className="-ml-4 col-start-2 col-span-6 max-w-[940px]  border-b-2 border-b-black/20 border-dashed  mb-7 mobile:col-start-2 mobile:col-span-8 "></div>
+				<div className="-ml-4 col-start-2 col-span-6 max-w-[940px]  border-b-2 border-b-black/20 border-dashed  mb-7 mobile:col-start-2 mobile:col-span-8 mobile:w-[334px] "></div>
 			</div>
 		</>
 	);

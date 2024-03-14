@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const CardBenefits = () => {
 	return (
-		<div className="flex flex-col   mt-12 mb-20 gap-y-10">
+		<div className="flex flex-col  mt-12 mb-20 gap-y-10">
 			<div className="flex gap-x-3  mobile:flex-col  gap-y-3">
 				{/* <IconUserHeart size={50} stroke={1} /> */}
 				<Image src={Asuransi} alt="ini iconnya" width={56} />
