@@ -1,4 +1,4 @@
-import CardContent from "@/components/Card/CardContentKost";
+import CardContentHome from "@/components/Card/CardContenHome";
 import TestimoniCard from "@/components/Card/TestimoniCard";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -9,7 +9,7 @@ export default function Pages() {
 	return (
 		<div>
 			<Navbar />
-			<CardContent />
+			<CardContentHome />
 			<TestimoniCard />
 			<PaymentMethod />
 			<Footer />

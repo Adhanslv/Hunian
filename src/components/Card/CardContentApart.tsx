@@ -9,11 +9,8 @@ export default function CardContent() {
 			<div className="grid grid-cols-3 gap-x-12  tablet:grid-cols-2 mobile:block">
 				{DataContentApartemen.map((data, index) => {
 					return (
-						<div
-							key={index}
-							className=" hover:scale-105  ease-in duration-300 overflow-hidden"
-						>
-							<Link href="/Preview/Apartemen" as={`/Preview/${data.partid}`}>
+						<div key={index} className="">
+							<Link href="/Show/[partid]" as={`/Show/${data.partid}`}>
 								<div className="-mb-4 overflow-hidden block">
 									<Image
 										src={data.images}
@@ -25,6 +22,9 @@ export default function CardContent() {
 										alt="ini fotonya"
 										className="w-full aspect-[21/9] object-cover object-center mb-4 rounded-t-xl cursor-pointer "
 									/>
+								</div>
+								<div className="absolute -mt-[150px]  ml-[259px] text-white bg-[#3d7d7b]/80 px-3 py-1 rounded-full tablet:-mt-[122	px] tablet:ml-[197px] mobile:-mt-[122px] mobile:ml-[197px]">
+									diskon {data.discount}
 								</div>
 								<div className="mb-8 border border-black/20  bg-white items-center  px-5 py-4 rounded-b-xl shadow-sm ">
 									<div className="flex items-center justify-between mb-3">
@@ -38,7 +38,11 @@ export default function CardContent() {
 										<span>{data.author}</span>
 										<span>{data.timestamp}</span>
 									</div>
-									<div className="flex gap-x-3 tablet:text-sm mobile:text-sm"></div>
+									<div className="flex gap-x-3 tablet:text-sm mobile:text-sm">
+										<button className="bg-[#3d7d7b] text-white px-5 py-2  w-full	 rounded-md">
+											Lihat Detail
+										</button>
+									</div>
 								</div>
 							</Link>
 						</div>

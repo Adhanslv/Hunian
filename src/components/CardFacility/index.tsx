@@ -10,7 +10,7 @@ import { MdOutlineCleaningServices } from "react-icons/md";
 const CardFacility = () => {
 	return (
 		<div>
-			<h1 className="text-2xl font-semibold">Fasilitas Kamar</h1>
+			<h1 className="text-2xl font-semibold">Fasilitas</h1>
 			<div className="grid grid-cols-2 mb-20 mt-10">
 				<div className="flex flex-col gap-y-5  ">
 					<p className="flex items-center gap-x-2">
