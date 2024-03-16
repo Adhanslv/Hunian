@@ -9,12 +9,15 @@ const Navbar = () => {
 	const [open, setOpen] = useState<boolean>(false);
 	return (
 		<>
-			<nav className="flex items-center justify-between p-[10vw] py-5  bg-[#00426f] tablet:px-4 mobile:px-3">
+			<nav className="flex items-center justify-between p-[10vw] py-5  bg-[#00426f] tablet:px-[5vw] mobile:px-4	">
 				<div className="text-white flex items-center gap-x-2 text-3xl font-semibold mobile:text-[19px]">
 					<IconDoor size={35} /> Hunian
 				</div>
 				<div className="flex gap-10	 text-white text-lg mobile:hidden ">
-					<Link href={"/"} className="text-white/75 hover:text-white ">
+					<Link
+						href={"/"}
+						className="text-white/75 hover:text-white has-[:checked]:bg-indigo-50 has-[:checked]:text-indigo-900 "
+					>
 						Home
 					</Link>
 					<Link href={"/Kost"} className="text-white/75 hover:text-white ">
@@ -25,9 +28,11 @@ const Navbar = () => {
 					</Link>
 				</div>
 				<div>
-					<button className=" flex  items-center gap-x-2 px-5 py-2 rounded-md bg-white outline-none text-[#00426f] mobile:hidden">
-						<IconBrandGoogleFilled /> Login
-					</button>
+					<Link href={"/Login"}>
+						<button className=" flex  items-center gap-x-2 px-5 py-2 rounded-md bg-white outline-none text-[#00426f] mobile:hidden">
+							<IconBrandGoogleFilled /> Log in
+						</button>
+					</Link>
 					<button
 						onClick={() => setOpen((open) => !open)}
 						className="hidden mobile:block text-white"
