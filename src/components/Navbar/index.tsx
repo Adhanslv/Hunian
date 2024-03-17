@@ -67,14 +67,14 @@ const Navbar = () => {
 					</Link>
 					<div className=" h-px	 my-1 w-full bg-black/20 " />
 					<Link
-						href={"/"}
+						href={"/Login"}
 						className="px-4 py-2 block hover:bg-black/10 hover:rounded-md"
 					>
 						Log in
 					</Link>
 				</div>
 			</div>
-			<div className="flex items-center justify-center bg-[#00426f]">
+			<div className="flex flex-col items-center justify-center bg-[#00426f]">
 				<CardSearch />
 			</div>
 		</>

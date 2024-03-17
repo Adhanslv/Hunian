@@ -13,7 +13,6 @@ import {
 	IconHeart,
 	IconPhoto,
 	IconShare,
-	IconUserHeart,
 } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,7 +26,7 @@ const Previews = () => {
 	return (
 		<>
 			<div className="px-[10vw]  flex items-center text-2xl mobile:-ml-3 mt-10">
-				<Link href={"/"} className="flex items-center  gap-x-2">
+				<Link href={"/Kost"} className="flex items-center  gap-x-2">
 					<IconCircleArrowLeft size={35} className="font-light mobile:-ml-4" />
 					<h1 className="hover:translate-x-2 font-semibold transition ease-in duration-300  cursor-pointer text-[20px] mobile:text-[19px]">
 						Back

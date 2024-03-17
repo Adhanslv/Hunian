@@ -33,12 +33,11 @@ function CardSearch() {
 					<option value="">Samarinda</option>
 					<option value="">Banjarbaru</option>
 				</select>
-				<button
-					type="submit"
-					className="flex items-center gap-2 px-3 py-2 bg-[#00426f] text-white rounded-md tablet:w-full tablet:text-[14px] tablet:px-2 mobile:w-full "
-				>
-					<IconSearch />
-					Cari Hunian
+				<button className="flex items-center gap-2 px-3 py-2 bg-[#00426f] text-white rounded-md tablet:w-full tablet:text-[14px] tablet:px-2  ">
+					<div className="w-full flex items-center gap-x-3 mobile:px-6">
+						<IconSearch />
+						Cari Hunian
+					</div>
 				</button>
 			</div>
 		</div>

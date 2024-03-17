@@ -22,7 +22,7 @@ export default function TestimoniCard() {
 										alt="ini avatarnya"
 										width={60}
 										height={60}
-										className="rounded-full object-cover object-center aspect-[1/1] w-fit"
+										className="rounded-full object-cover object-center aspect-[1/1]  h-fit"
 									/>
 									<div>
 										<h1>{data.name}</h1>
