@@ -9,6 +9,7 @@ export const DataContentHome = [
 		author: "Mami Kos",
 		timestamp: "12/02/2023",
 		discount: "15%",
+		pricelist: 4500000,
 	},
 	{
 		images: "/images/room/room2.jpg",
@@ -20,6 +21,7 @@ export const DataContentHome = [
 		author: "Kimbe",
 		timestamp: "12/02/2023",
 		discount: "25%",
+		pricelist: 4500000,
 	},
 	{
 		images: "/images/room/room3.jpg",
@@ -31,6 +33,7 @@ export const DataContentHome = [
 		author: "Parsinta",
 		timestamp: "12/12/2023",
 		discount: "10%",
+		pricelist: 4500000,
 	},
 	{
 		images: "/images/apartemen/room1.jpg",
@@ -42,6 +45,7 @@ export const DataContentHome = [
 		author: "Mami Kos",
 		timestamp: "12/02/2023",
 		discount: "25%",
+		pricelist: 4500000,
 	},
 	{
 		images: "/images/apartemen/room2.jpg",
@@ -53,6 +57,7 @@ export const DataContentHome = [
 		author: "Kimbe",
 		timestamp: "12/02/2023",
 		discount: "55%",
+		pricelist: 4500000,
 	},
 	{
 		images: "/images/apartemen/room3.jpg",
@@ -64,6 +69,7 @@ export const DataContentHome = [
 		author: "Parsinta",
 		timestamp: "12/02/2023",
 		discount: "15%",
+		pricelist: 4500000,
 	},
 ];
 

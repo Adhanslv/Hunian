@@ -30,6 +30,9 @@ export default function CardContentHome() {
 									<h1 className="font-semibolds">{data.type}</h1>
 									<p className="italic text-black/75">{data.stock}</p>
 								</div>
+								<p className="font-light capitalize mb-4">
+									rp. {data.pricelist}
+								</p>
 								<h1 className=" uppercase font-semibold">{data.title}</h1>
 								<p>{data.desk}</p>
 								<p className="mb-3 mt-2 text-black/45 ">{data.domsil}</p>

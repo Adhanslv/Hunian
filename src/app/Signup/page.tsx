@@ -2,12 +2,12 @@ import { IconMail, IconLock } from "@tabler/icons-react";
 import Link from "next/link";
 import React, { useState } from "react";
 
-const LoginPage = () => {
+const SignupPage = () => {
 	return (
 		<div className="flex flex-col justify-center items-center h-screen">
-			<h1 className="text-3xl font-semibold">Log in</h1>
+			<h1 className="text-3xl font-semibold">Sign up</h1>
 			<div className="border border-black/20 px-12 py-6 rounded-lg mt-3 shadow-lg mobile:w-[90vw] mobile:p-6 ">
-				<div className="text-center mb-7 text-[17px]">Welcome Back</div>
+				<div className="text-center mb-7 text-[17px]">Create New Account</div>
 				<div className="flex flex-col gap-y-5">
 					<div className="relative  p-3 flex items-center gap-3 rounded-lg border border-black/30">
 						<IconMail stroke={1.5} />
@@ -29,8 +29,18 @@ const LoginPage = () => {
 							className="bg-transparent outline-none w-[250px] mobile:w-full"
 						/>
 					</div>
+					<div className="relative  p-3 flex items-center gap-3 rounded-lg border border-black/30">
+						<IconLock stroke={1.5} />
+						<input
+							type="password"
+							name=""
+							id=""
+							placeholder="Confirm Password"
+							className="bg-transparent outline-none w-[250px] mobile:w-full"
+						/>
+					</div>
 					<button className="rounded-lg  bg-sky-400 font-semibold py-2 text-white border-none">
-						Login
+						Sign up
 					</button>
 					<div className="flex items-center justify-between">
 						<div className="flex gap-x-1">
@@ -44,8 +54,8 @@ const LoginPage = () => {
 								Remeber me
 							</label>
 						</div>
-						<Link href={"/Signup"}>
-							<span className="text-sky-700  cursor-pointer  ">Sign up</span>
+						<Link href={"/"}>
+							<span className="text-sky-700  cursor-pointer  ">Log in</span>
 						</Link>
 					</div>
 				</div>
@@ -54,4 +64,4 @@ const LoginPage = () => {
 	);
 };
 
-export default LoginPage;
+export default SignupPage;
