@@ -61,13 +61,15 @@ const Previews = () => {
 			</div>
 			<div className="grid grid-cols-9 mb-7 items-start">
 				<div className="px-[10vw] mt-12 col-span-6 tablet:col-span-5  mobile:col-span-12 ">
-					<h1 className="text-3xl font-semibold mb-2">{items.title}</h1>
+					<h1 className="text-xl font-semibold mb-2 bg-green-600 w-fit px-3 py-2 rounded-md text-white">
+						{items.title}
+					</h1>
 					<div className="flex items-center  mt-6 gap-3 flex-wrap">
-						<p className="text-[18px] px-3 py-2 border border-black/30 rounded-md">
+						<p className="text-[16px] px-3 py-2 border border-black/30 rounded-r-full ">
 							{items.type}
 						</p>
-						<p className="text-[18px]"> {items.domsil}</p>
-						<p className="text-[18px]"> {items.desk}</p>
+						<p className="text-[16px]"> {items.domsil}</p>
+						<p className="text-[16px]"> {items.desk}</p>
 						<p className="flex items-center gap-2">
 							<IconCash size={30} className="text-green-700" /> 24 transaksi
 							berhasil di kos ini

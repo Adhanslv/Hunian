@@ -24,7 +24,7 @@ const Navbar = () => {
 	];
 
 	const pathname = usePathname();
-	const isActive = (path: any) => path === pathname;
+	const isActive = (path: string) => path === pathname;
 	return (
 		<>
 			<nav className="flex items-center justify-between p-[10vw] py-5  bg-[#00426f] tablet:px-[5vw] mobile:px-4	">
@@ -62,6 +62,56 @@ const Navbar = () => {
 					</button>
 				</div>
 			</nav>
+			{/* <div className="flex items-center md:hidden lg:hidden tablet:hidden   ">
+				<div
+					className={`${
+						open ? "block" : "hidden"
+					} absolute top-0 right-0 mr-8 w-56  mt-12   overflow-hiddenn  border border-black/20 text-black rounded-lg px-2 py-2.5 mobile:bg-white   `}
+				>
+					<div className="flex flex-col mb-1 gap-1 ">
+						{navLink.map((link) => {
+							return (
+								<Link
+									href={link.path}
+									key={link.path}
+									className={
+										isActive(link.path)
+											? "bg-[#0879c7] text-white py-1 px-2	rounded-full w-fit    "
+											: "text-black py-1 px-2 hover:bg-[#0879c7]/20 rounded-full w-fit "
+									}
+								>
+									{link.name}
+								</Link>
+							);
+						})}
+					</div>
+					<Link
+						href={"/"}
+						className="px-4 py-2 block hover:bg-black/10 hover:rounded-md "
+					>
+						Home
+					</Link>
+					<Link
+						href={"/Kost"}
+						className="px-4 py-2 block hover:bg-black/10 hover:rounded-md"
+					>
+						Kost
+					</Link>
+					<Link
+						href={"/Apartemen"}
+						className="px-4 py-2 block hover:bg-black/10 hover:rounded-md"
+					>
+						Apartemen
+					</Link>
+					<div className=" h-px	 my-1 w-full bg-black/20 " />
+					<Link
+						href={"/Login"}
+						className="px-4 py-2 block hover:bg-black/10 hover:rounded-md"
+					>
+						Log in
+					</Link>
+				</div>
+			</div> */}
 			<div className="hidden items-center md:hidden lg:hidden tablet:hidden mobile:block   ">
 				<div
 					className={`fixed bottom-0 right-0  w-full  mt-12   overflow-hiddenn   border-2 border-black/20 text-black rounded-t-3xl p-4	 mobile:bg-white  z-50 `}

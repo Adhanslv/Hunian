@@ -45,17 +45,47 @@ const Footer = () => {
 					<h1 className="font-semibold uppercase text-[18px] text-white ">
 						Hunian
 					</h1>
-					<Link href={"/"}>Tentang Kami</Link>
-					<Link href={"/"}>Job Kami</Link>
-					<Link href={"/"}>Promosikan Kost Anda</Link>
-					<Link href={"/"}>Pusat Bantuan</Link>
+					<Link
+						href={"/"}
+						className="hover:translate-x-2 transition ease-in-out duration-300"
+					>
+						Tentang Kami
+					</Link>
+					<Link
+						href={"/"}
+						className="hover:translate-x-2 transition ease-in-out duration-300"
+					>
+						Job Kami
+					</Link>
+					<Link
+						href={"/"}
+						className="hover:translate-x-2 transition ease-in-out duration-300"
+					>
+						Promosikan Kost Anda
+					</Link>
+					<Link
+						href={"/"}
+						className="hover:translate-x-2 transition ease-in-out duration-300"
+					>
+						Pusat Bantuan
+					</Link>
 				</div>
 				<div className="flex flex-col gap-y-4 mb-4 text-white/75 ">
 					<h1 className="font-semibold uppercase text-[18px] text-white ">
 						Kebijakan
 					</h1>
-					<Link href={"/"}>Kebijakan Privasi</Link>
-					<Link href={"/"}>Syarat dan Ketentuan</Link>
+					<Link
+						href={"/"}
+						className="hover:translate-x-2 transition ease-in-out duration-300"
+					>
+						Kebijakan Privasi
+					</Link>
+					<Link
+						href={"/"}
+						className="hover:translate-x-2 transition ease-in-out duration-300"
+					>
+						Syarat dan Ketentuan
+					</Link>
 				</div>
 				<div className="flex flex-col gap-y-4 mb-4 text-white/75 mobile:text-[12px]">
 					<h1 className="font-semibold uppercase text-[18px] text-white ">

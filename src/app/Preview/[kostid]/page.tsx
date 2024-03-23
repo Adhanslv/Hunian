@@ -59,7 +59,9 @@ const Previews = () => {
 			</div>
 			<div className="grid grid-cols-9 mb-7 items-start">
 				<div className="px-[10vw] mt-12 col-span-6 tablet:col-span-5  mobile:col-span-12 ">
-					<h1 className="text-3xl font-semibold mb-2">{items.title}</h1>
+					<h1 className="text-xl font-semibold mb-2 bg-green-600 w-fit px-3 py-2 rounded-full text-white">
+						{items.title}
+					</h1>
 					<div className="flex items-center  mt-6 gap-3 flex-wrap">
 						<p className="text-[18px] px-3 py-2 border border-black/30 rounded-md">
 							{items.type}
