@@ -7,7 +7,6 @@ import { IconMenu2 } from "@tabler/icons-react";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-	const [open, setOpen] = useState<boolean>(false);
 	const navLink = [
 		{
 			name: "Home",
@@ -24,7 +23,7 @@ const Navbar = () => {
 	];
 
 	const pathname = usePathname();
-	const isActive = (path: string) => path === pathname;
+	const isActive = (path: any) => path === pathname;
 	return (
 		<>
 			<nav className="flex items-center justify-between p-[10vw] py-5  bg-[#00426f] tablet:px-[5vw] mobile:px-4	">
@@ -54,10 +53,7 @@ const Navbar = () => {
 							<IconBrandGoogleFilled /> Log in
 						</button>
 					</Link>
-					<button
-						onClick={() => setOpen((open) => !open)}
-						className="hidden mobile:block text-white"
-					>
+					<button className="hidden mobile:block text-white">
 						<IconMenu2 />
 					</button>
 				</div>
